@@ -1,0 +1,56 @@
+[
+    {
+        "name": "funnyStory",
+        "description": "Generate a funny story",
+        "endpoint": "https://api.example.com/generateFunnyStory",
+        "method": "POST",
+        "parameters": [
+            {
+                "name": "storyLength",
+                "type": "integer",
+                "urlType": "body",
+                "description": "The length of the story in words."
+            },
+            {
+                "name": "storyElements",
+                "type": "string array",
+                "urlType": "body",
+                "description": "A list of characters, settings, and events to include in the story."
+            }
+        ]
+    },
+    {
+        "name": "fibonacci",
+        "description": "Calculate the Fibonacci sequence up to a given number.",
+        "endpoint": "https://api.example.com/fibonacci",
+        "method": "GET",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "integer",
+                "urlType": "query",
+                "description": "The number up to which to calculate the Fibonacci sequence."
+            }
+        ]
+    },
+    {
+        "name": "weatherForecast",
+        "description": "Get the weather forecast for a specific location.",
+        "endpoint": "https://api.example.com/weatherForecast",
+        "method": "GET",
+        "parameters": [
+            {
+                "name": "location",
+                "type": "string",
+                "urlType": "path",
+                "description": "The location for which to get the weather forecast."
+            },
+            {
+                "name": "days",
+                "type": "integer",
+                "urlType": "query",
+                "description": "The number of days for which to get the forecast."
+            }
+        ]
+    }
+]
