@@ -12,7 +12,7 @@ type Options struct {
 	Query string
 }
 
-func Run(opt Options) (string, error) {
+func Serve(opt Options) (string, error) {
 	ai := opt.Ai
 	query := opt.Query
 
